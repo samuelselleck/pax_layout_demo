@@ -8,6 +8,7 @@
  anchor_x=50%
  anchor_y=50%
 >
+	//remove this stacker and it works
   <Stacker cells=2 direction=StackerDirection::Vertical>
 		<Text text={self.content} style=
 	        {
