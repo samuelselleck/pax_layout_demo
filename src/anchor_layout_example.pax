@@ -8,19 +8,15 @@
  anchor_x=50%
  anchor_y=50%
 >
-  <Stacker cells=2 direction=StackerDirection::Vertical>
-		<Text text={self.content} style=
-	        {
-	            font: {Font::system("Helvetica", FontStyle::Normal, FontWeight::Bold)},
-	            font_size: 72px,
-	            fill: {Color::rgba(1.0,0.0,0.0, 1.0)}
-	            align_vertical: TextAlignVertical::Center,
-	            align_horizontal: TextAlignHorizontal::Center,
-	            align_multiline: TextAlignHorizontal::Center,
-	        }
-		 />
-	  <Rectangle fill={Fill::Solid(Color::rgb(0.0, 0.0, 0.0))}/>
-	</Stacker>
+	<Marker x={self.p_x} y={self.p_y}/>
+  	<Rectangle
+	  width=20%
+		height=20%
+		x={self.p_x}
+		y={self.p_y}
+		anchor_x={self.a_x}
+		anchor_y={self.a_y}
+	  fill={Fill::Solid(Color::rgb(0.4, 0.4, 0.4))}/>
 </Frame>
 
 @handlers {

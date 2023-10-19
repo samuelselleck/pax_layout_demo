@@ -1,0 +1,28 @@
+
+
+<Frame
+ @click=self.clicked
+ width=50px
+ height=50px
+ anchor_x=50%
+ anchor_y=50%
+>
+  <Rectangle
+		height=20%
+		x=50%
+		y=50%
+		anchor_x=50%
+		anchor_y=50%
+	  fill={Fill::Solid(Color::rgb(1.0, 1.0, 1.0))}/>
+  <Rectangle
+		width=20%
+		x=50%
+		y=50%
+		anchor_x=50%
+		anchor_y=50%
+	  fill={Fill::Solid(Color::rgb(1.0, 1.0, 1.0))}/>
+</Frame>
+
+@handlers {
+    did_mount: self.handle_did_mount
+}

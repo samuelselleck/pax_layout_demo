@@ -1,9 +1,26 @@
 <Group>
-    <AnchorLayoutExample size={100% + (-20px)} content="newanch"/>
-    <Rectangle width=100% height=100% fill={Fill::linearGradient(
+		<Text height=40px text=" Pax Layout Engine Example" style=
+	        {
+	            font: {Font::system("Helvetica", FontStyle::Normal, FontWeight::Bold)},
+	            font_size: 20px,
+	            fill: {Color::rgba(0.0,0.0,0.0, 1.0)}
+	            align_vertical: TextAlignVertical::Center,
+	            align_horizontal: TextAlignHorizontal::Left,
+	            align_multiline: TextAlignHorizontal::Left,
+	        }
+		 />
+		<Frame y=80% height=40px>
+        <Rectangle width= 20% @click=self.click9 fill={Fill::Solid(Color::rgb(0.9, 0.9, 0.9))}/>
+        <Rectangle width= 20% x=20% @click=self.click7 fill={Fill::Solid(Color::rgb(0.7, 0.7, 0.7))}/>
+        <Rectangle width= 20% x=40% @click=self.click5 fill={Fill::Solid(Color::rgb(0.5, 0.5, 0.5))}/>
+        <Rectangle width= 20% x=60% @click=self.click3 fill={Fill::Solid(Color::rgb(0.3, 0.3, 0.3))}/>
+        <Rectangle width= 20% x=80% @click=self.click1 fill={Fill::Solid(Color::rgb(0.1, 0.1, 0.1))}/>
+		</Frame>
+    <AnchorLayoutExample p_x={self.val} p_y=20% a_x=50% a_y=50%/>
+    <Rectangle  fill={Fill::linearGradient(
             (0%, 0%),
             (100%, 100%),
-            [GradientStop::get(Color::rgb(0.9,0.9,0.9), 0%), GradientStop::get(Color::rgb(1.0,1.0,1.0), 100%)])}
+            [GradientStop::get(Color::rgb(0.4,0.4,0.4), 0%), GradientStop::get(Color::rgb(1.0,1.0,1.0), 100%)])}
     />
 </Group>
 
