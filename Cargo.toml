@@ -1,0 +1,18 @@
+[package]
+name = "pax-playground"
+version = "0.9.9"
+edition = "2021"
+
+[dependencies]
+pax-lang = { version = "0.9.9" }
+pax-std = { version = "0.9.9" }
+pax-compiler = { version = "0.9.9", optional = true}
+serde_json = {version = "1.0.95", optional = true}
+
+[[bin]]
+name = "parser"
+path = "src/lib.rs"
+required-features = ["parser"]
+
+[features]
+parser = ["pax-std/parser", "pax-lang/parser", "dep:serde_json", "dep:pax-compiler"]

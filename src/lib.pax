@@ -1,0 +1,12 @@
+<Group>
+    <AnchorLayoutExample size={100% + (-20px)} content="newanch"/>
+    <Rectangle width=100% height=100% fill={Fill::linearGradient(
+            (0%, 0%),
+            (100%, 100%),
+            [GradientStop::get(Color::rgb(0.9,0.9,0.9), 0%), GradientStop::get(Color::rgb(1.0,1.0,1.0), 100%)])}
+    />
+</Group>
+
+@handlers {
+    did_mount: self.handle_did_mount
+}

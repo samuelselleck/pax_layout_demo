@@ -1,0 +1,25 @@
+<Frame
+ @click=self.clicked
+ width={self.size}
+ height={self.size}
+ x=50%
+ y=50%
+ anchor_x=50%
+ anchor_y=50%
+>
+  <Rectangle fill={Fill::Solid(Color::rgb(0.0, 0.0, 0.0))}/>
+	<Text text={self.text} style=
+        {
+            font: {Font::system("Helvetica", FontStyle::Normal, FontWeight::Bold)},
+            //font_size: 72px,
+            fill: {Color::rgba(1.0,1.0,1.0,1.0)}
+            align_vertical: TextAlignVertical::Center,
+            align_horizontal: TextAlignHorizontal::Center,
+            align_multiline: TextAlignHorizontal::Center,
+        }
+	 />
+</Frame>
+
+@handlers {
+    did_mount: self.handle_did_mount
+}
