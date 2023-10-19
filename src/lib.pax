@@ -1,5 +1,5 @@
 <Group>
-    <AnchorLayoutExample size={100% + (-20px)} content="newanch"/>
+    <AnchorLayoutExample size={100% + (-20px)}/>
     <Rectangle width=100% height=100% fill={Fill::linearGradient(
             (0%, 0%),
             (100%, 100%),

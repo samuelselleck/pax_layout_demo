@@ -9,11 +9,12 @@
  anchor_y=50%
 >
   <Stacker cells=2 direction=StackerDirection::Vertical>
-		<Text text={self.content} style=
+		<Text text="Layout example" style=
 	        {
 	            font: {Font::system("Helvetica", FontStyle::Normal, FontWeight::Bold)},
-	            font_size: 72px,
-	            fill: {Color::rgba(1.0,0.0,0.0, 1.0)}
+	            font_size: 13px,
+							//TODO this only works with rgba
+	            fill: {Color::rgb(0.3,0.3,0.3)}
 	            align_vertical: TextAlignVertical::Center,
 	            align_horizontal: TextAlignHorizontal::Center,
 	            align_multiline: TextAlignHorizontal::Center,
